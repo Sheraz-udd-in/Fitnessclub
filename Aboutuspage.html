@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+<style>
+ 
+body {font-family: Arial, Helvetica, sans-serif}
+* {box-sizing: border-box;
+margin-top: 0%;
+margin-bottom: 1%;
+margin-left: 0%;
+margin-right: 0%;}
+
+.bg-img {
+  /* The image used */
+  background-image: url("aboutus.png");
+width: 100%;
+  min-height: 746px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  /* Needed to position the navbar */
+  position: relative;
+}
+
+.container {
+  position: absolute;
+  margin: 20px;
+  width: auto;
+}
+
+.topnav {
+  overflow: hidden;
+  
+}
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+.topnav a:hover {
+  background-color: rgb(61, 61, 61);
+  color: rgb(255, 255, 255);
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.about-section {
+  padding: 2px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  height: 1100px;
+  
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+h1{
+    font-size: 40px;
+}
+.faq{
+background-color: rgb(43, 43, 84);
+height: 500px;
+padding-top: 20px;
+text-align: center;
+
+}
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 15px;
+  width: 60%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+ 
+}
+
+.active, .accordion:hover {
+  background-color: rgb(107, 103, 103); 
+}
+h2{
+    text-align: center;
+    font-size: 50px;
+}
+
+footer{
+  background-color: rgb(43, 54, 88);
+            height: 300px;
+            font-size: 30px;
+            text-align: center;
+            list-style: none;
+            padding-top: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            padding-bottom: 0px;
+          
+        }       
+        .footer-content{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            padding-bottom: 0px;
+            margin-bottom: 0;
+        }
+        li{
+            list-style: none;
+        }
+        p{
+            color: white;
+            font-size: 14px;
+            padding: 10px;
+            max-width: 100%;
+            line-height: 28px;
+        }
+        .footer-bottom p{
+            font-size: 14px;
+            word-spacing: 2px;
+            text-transform: capitalize;
+        }
+        .footer-bottom span{
+            text-transform: uppercase;
+            opacity: .4;
+            font-weight: 200;
+        }
+        h3{
+            font-size: 1.9em;
+            line-height: 3rem;
+
+        }
+
+.footer-bottom{
+    background-color: rgb(19, 30, 63);
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+</style>
+</head>
+<body>
+
+
+<div class="bg-img">
+    
+  <div class="container">
+    <div class="topnav">
+      <a href="index.html">Home</a>
+      <a href="Aboutuspage.html">About Us</a>
+      <a href="Careerspage.html">Careers</a>
+      <a href="ContactUspage.html">Contact Us</a>
+
+    </div>
+    
+  </div>
+</div>
+
+<div class="about-section">
+    
+  <h1 style="text-align:center">Our Team</h1>
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <img src="TRAINER1.jpg" style="width:100%">
+        <div class="container">
+          <h2>Mike Ross</h2>
+          <p class="title">Trainer</p>
+          <p>______________________________________________</p>
+          <p>mike@gmail.com</p>
+          <p><button class="button">Contact</button></p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="column">
+      <div class="card">
+        <img src="TRAINER2.jpg" style="width:100%">
+        <div class="container">
+          <h2>Jane Ross</h2>
+          <p class="title">Trainer</p>
+          <p>______________________________________________</p>
+          <p>jane@yahoo.com</p>
+          <p><button class="button">Contact</button></p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="column">
+      <div class="card">
+        <img src="TRAINER3.jpg" style="width:100%">
+        <div class="container">
+          <h2>John Doe</h2>
+          <p class="title">Trainer</p>
+          <p>______________________________________________</p>
+          <p>john@gmail.com</p>
+          <p><button class="button">Contact</button></p>
+        </div>
+      </div>
+    </div>    
+</div>
+</div>
+<section class="faq">
+    <h2 id="faq">Frequently Asked Questions</h2>
+    
+    <button class="accordion" onclick="myFunction1()">How old do I have to be to join Gold's Gym?</button>
+    <p id="demo"></p>
+    <script>
+        function myFunction1() {
+          document.getElementById("demo").innerHTML = "To join you must be sixteen years or above. All membership agreements for children under 16 years of age need to be authorised and signed by a legal guardian.";
+        }
+    </script>
+    
+    <button class="accordion" onclick="myFunction2()">Can I put my membership on hold?</button>
+    <p id="dem"></p>
+    <script>
+        function myFunction2() {
+          document.getElementById("dem").innerHTML = "Yes, you can. We callour hold option - freeze. At Gold's Gym, we believe that exercise is a lifelong habit.A freez3 fee will be charged?";
+        }
+    </script>
+    
+    <button class="accordion" onclick="myFunction3()">What if I want to cancel my membership?</button>
+    <p id="deo"></p>
+    <script>
+        function myFunction3() {
+          document.getElementById("deo").innerHTML = "We hope you have really benifited from your time with us. However if you want to  cancel your membership, pleasse visit one of your nearest clubwhere one of our receptionists will arrange someone to take you through the cancellation procedure.";
+        }
+    </script>
+    
+    </section>
+    <footer class="footer">
+      <div class="footer-content">
+          <h3>Gold's Gym</h3>
+          <p>The articles on Gold's Gym website is provided for reference purposes only, A public resource you can use for free. You should not take them as the sole source of medical direction.</p>
+        <p>Do not ever disregard professional psychological or medical advice nor delay in any manner seeking professional advice or treatment because of something you have read on our site or social media.</p>
+      </div>
+      <div class="footer-bottom">
+          <p>copyright &copy;2022 Gold'sGym. designed by <span>xyz</span></p>
+      </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home</title>
+</head>
+<body>
+<style>
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    
+
+}
+.bg-img {
+  background-image: url("home.png");
+  min-height: 746px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+}
+.container {
+  position: absolute;
+  margin: 20px;
+  width: 100%;
+}
+.topnav {
+  overflow: hidden;
+  width: 100%;
+}
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 12px;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+.topnav a:hover {
+  background-color: rgb(61,61,61);
+  color:white;
+}
+.container1{
+    display: grid;
+    margin-top: 5px;
+    height: 100vh;
+    width: 100%;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows:15fr 15fr 13.5fr;
+    grid-template-areas: "sidebar1 sidebar2 gallery"
+                         "sidebar1 sidebar2 faq"
+                        "footer footer footer";
+    grid-gap: 5px;
+    text-align: center;
+    font-size: 2rem;
+}
+.sidebar1{
+    background-color: red;
+    grid-area: sidebar1;
+    background-image: url("sidebar1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.sidebar2{
+    background-color: yellow;
+    height: 700px;
+    grid-area: sidebar2;
+    background-image: url("sidebar2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+}
+.gallery{
+    background-color: rgb(5, 2, 3);
+    grid-area: gallery; 
+    background-image: url("gallery.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.faq{
+    background-color: rgb(7, 7, 7);
+    grid-area: faq;
+    background-image: url("faq.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.footer{
+    background-color: rgb(23, 56, 122);
+    grid-area: footer;
+}
+
+.ul{
+  list-style: none;
+  text-decoration: none;
+  padding-top: 150px;
+}
+h2{
+  color: white;
+  text-decoration: none;
+  padding-top: 40%;
+}
+li{
+  text-align: center;
+  font-weight: 100;
+  text-decoration: none;
+  color: white;
+  padding-top: 40px;
+}
+.btn{
+    background-color: rgba(230,230,230,0.6);
+    padding: 12px 40px;
+    text-decoration: none;
+    color: rgb(107, 106, 108);
+    font-size: 25px;
+    letter-spacing: 3px;
+    
+    
+}
+.btn:hover{
+    background-color:rgb(107, 106, 108);
+    color: rgb(10, 9, 9);
+}
+
+footer{
+            background-color: rgb(2, 3, 5);
+            height: 300px;
+            font-size: 30px;
+            text-align: center;
+            list-style: none;
+            padding-top: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            padding-bottom: 0px;
+        }
+        li{
+            list-style: none;
+        }
+        p{
+            color: white;
+            font-size: 14px;
+            padding: 10px;
+            max-width: 100%;
+            line-height: 28px;
+        }
+        .footer-bottom p{
+            font-size: 14px;
+            word-spacing: 2px;
+            text-transform: capitalize;
+        }
+        .footer-bottom span{
+            text-transform: uppercase;
+            opacity: .4;
+            font-weight: 200;
+        }
+        h3{
+            font-size: 1.9em;
+            line-height: 3rem;
+
+        }
+
+.footer-bottom{
+    background-color: rgb(19, 30, 63);
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+.photo{
+  display: flex;
+  background-color: rgb(244, 243, 250);
+  align-items: center;
+  overflow-y: hidden;
+  margin-bottom: 5px;
+  margin-top: 5px; 
+  justify-content: center;
+  /* padding-top:20%; */
+}
+.photo img{
+  width: 400px;
+  height: 580px;
+  margin-right: 10px;
+  border-radius: 15px;
+  background-color: rgb(244, 240, 240);
+  border: 1px solid rgb(247, 244, 244);
+}
+.des{
+  font-size: 30px;
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: white;
+}
+#demo{
+  font-size: 25px;
+  font-weight: bold;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-decoration: underline;
+  color: rgb(207, 202, 202);
+
+  
+}
+#demo img{
+  height: 300px;
+}
+
+
+
+    </style>
+    <div class="bg-img">
+        <div class="container">
+          <div class="topnav">
+            <ul>
+            <a href="Homepage.html">Home</a>
+            <a href="Aboutuspage.html">About Us</a>
+            <a href="Careerspage.html">Careers</a>
+            <a href="ContactUspage.html">Contact</a>
+          </ul>
+          </div>
+        </div>
+    </div>
+
+    <div class="photo">
+      <a href="G1.jpg"><img src="G1.jpg"></a>
+      <a href="G2.jpg"><img src="G2.jpg"></a>
+      <a href="G3.jpg"><img src="G3.jpg"></a>
+      <a href="G4.jpg"><img src="G4.jpg"></a>
+      <a href="G5.jpg"><img src="G5.jpg"></a>
+      <a href="G6.jpg"><img src="G6.jpg"></a>
+      <a href="G7.jpg"><img src="G7.jpg"></a>
+      <a href="G8.jpg"><img src="G8.jpg"></a>
+      <a href="G9.jpg"><img src="G9.jpg"></a>
+      <a href="G10.jpg"><img src="G10.jpg"></a>
+      <a href="G11.jpg"><img src="G11.jpg"></a>
+      <a href="G12.jpg"><img src="G12.jpg"></a>
+      <a href="G13.jpg"><img src="G13.jpg"></a>
+      <a href="G14.jpg"><img src="G14.jpg"></a>
+      <a href="G15.jpg"><img src="G15.jpg"></a>
+
+    </div>
+    
+    
+    <div class="container1">
+        <div class="sidebar1">
+          <h2>Packages</h2>
+            <div class="packages">
+                <ul>
+                <li><button class="btn" onclick="myFunction1()">Classic</button></li>
+                <br>
+                <li><button class="btn" onclick="myFunction2()">Standard</button></li>
+                <br>
+                <li><button class="btn" onclick="myFunction3()">Premium</button></li>
+                </ul>
+            </div>
+        </div> 
+        <div class="sidebar2"><h2>Packages Description</h2>
+            <p id="demo"></p>
+            <script>
+              var x= "Rs.5000-12 Month Membership-Personal Trainer-Locker"
+                function myFunction1() {
+                  document.getElementById("demo").innerHTML = x;
+                }
+                var y = "Rs.7000-12 Month Membership-Personal Trainer-Locker "
+                function myFunction2() {
+                  document.getElementById("demo").innerHTML = y;
+                }
+                z="Rs.10000-12 Month Mmembership-Personal Trainer-Massage-Locker"
+                function myFunction3() {
+                  document.getElementById("demo").innerHTML = z;
+                }
+            </script>
+                
+
+        </div>
+        <div class="gallery"><a href="Careerspage.html"></a>
+          <a href="Careerspage.html#gal"><h2>Gallery</h2></a></div>
+        <div class="faq"><a href="Aboutuspage.html"></a>
+          <a href="Aboutuspage.html#faq"><h2> FAQs</h2></a></div>
+    
+          <footer class="footer">
+            <div class="footer-content">
+                <h3>Gold's Gym</h3>
+                <p>The articles on Gold's Gym website is provided for reference purposes only, A public resource you can use for free. You should not take them as the sole source of medical direction.</p>
+                <p>Do not ever disregard professional psychological or medical advice nor delay in any manner seeking professional advice or treatment because of something you have read on our site or social media.</p>
+            </div>
+            <div class="footer-bottom">
+                <p>copyright &copy;2022 gold'sGym. designed by <span>xyz</span></p>
+            </div>
+        </footer>
+  
+    </div>
+</body>
+</html>
